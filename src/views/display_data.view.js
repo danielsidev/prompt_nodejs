@@ -1,5 +1,5 @@
 let NumberAccept = require("../utils/number_accept.utils");
-let Data = require("../controller/data.controller");
+let Data = require("../controllers/data.controller");
 
 class DisplayTime{
 

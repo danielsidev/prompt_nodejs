@@ -1,8 +1,8 @@
 
-const DisplayLine = require("../view/display_line.view");   
-const DisplayTime = require("../view/display_time.view");
-const DisplayData = require("../view/display_data.view");
-const DisplayPercent = require("../view/display_percent.view");
+const DisplayLine = require("../views/display_line.view");   
+const DisplayTime = require("../views/display_time.view");
+const DisplayData = require("../views/display_data.view");
+const DisplayPercent = require("../views/display_percent.view");
 
 class App {
     constructor(){

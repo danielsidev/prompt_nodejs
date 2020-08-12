@@ -1,5 +1,5 @@
 let NumberAccept = require("../utils/number_accept.utils");
-let Percent = require("../controller/percent.controller");
+let Percent = require("../controllers/percent.controller");
 
 class DisplayPercent{
 
