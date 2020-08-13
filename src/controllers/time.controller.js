@@ -22,6 +22,7 @@ class Time {
         this.objResponse.unity = 'min';
     }
     setHours(){
+        
         this.objResponse.value = (this.time / this.hou);
         this.objResponse.unity = 'h';
     }
