@@ -14,7 +14,7 @@ class DisplayPercent{
             if(numberAccept.floatCheck() ){
               let percent = new Percent(answer);
               let converted = percent.converter();
-              console.log(`${answer}  é igual a ${converted.value} ${converted.unity}`);
+              console.log(`${converted.value} ${converted.unity}`);
               this.rl.close();
             }else{
                 console.log(`\n\nPrecisamos que um número decimal seja informado. Tente novamente!`);

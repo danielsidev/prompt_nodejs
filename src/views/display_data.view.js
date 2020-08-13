@@ -10,11 +10,12 @@ class DisplayTime{
     display(){
         console.log(`\n\n\Certo: Você quer converter Dados!`);
         this.rl.question('\n\nPor favor, informe um número em bytes: ', (answer) => {
-            let numberAccept = new NumberAccept(answer);
+          let res = answer.split(" ");
+            let numberAccept = new NumberAccept(res[0]);
             if(numberAccept.integerCheck() ){
-              let data = new Data(answer);
+              let data = new Data(res[0]);
               let converted = data.converter();
-              console.log(`${answer} byte(s) é igual a ${converted.value} ${converted.unity}`);
+              console.log(`${converted.value} ${converted.unity}`);
               this.rl.close();
             }else{
               console.log(`\n\nPrecisamos que um número seja informado. Tente novamente!`);
