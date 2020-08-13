@@ -9,12 +9,12 @@ class DisplayPercent{
 
     display(){
         console.log(`\n\n\Certo: Você quer converter Porcentagem!`);
-        this.rl.question('\n\nPor favor, informe um número decimal(ex:0.14): ', (answer) => {
+        this.rl.question('\n\nPor favor, informe um número decimal.\n\n\Exemplo: 0.14\n\n ', (answer) => {
             let numberAccept = new NumberAccept(answer);
             if(numberAccept.floatCheck() ){
               let percent = new Percent(answer);
               let converted = percent.converter();
-              console.log(`${converted.value} ${converted.unity}`);
+              console.log(` ${converted.value} ${converted.unity}`);
               this.rl.close();
             }else{
                 console.log(`\n\nPrecisamos que um número decimal seja informado. Tente novamente!`);
